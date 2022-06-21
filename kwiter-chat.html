@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+<body>
+    <center>
+        <button id="salir" onclick="Salir()">Salir🚪</button>
+        <p></p>
+        <h1 id="titulo">Kwiter</h1>
+        <sup><img src="pollo.png"></sup>
+        <br>
+        <div id="salida">
+            <h3 id="salaactual">Nombre de la sala: </h3>
+            <br>
+            <h3 id="salascreadas">Mensajes de la sala</h3>
+        </div>
+        <br>
+        <div>
+            <label id="enviar">Enviar: </label>
+            <br>
+            <input type="text" id="mensaje" placeholder="Escriba su mensaje">
+            <br>
+            <button id="enviarmensaje" onclick="enviarmensaje()">Enviar</button>
+        </div>
+    </center>
+    <script src="kwiter-chat.js"></script>
+</body>
+</html>
